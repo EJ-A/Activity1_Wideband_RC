@@ -1,0 +1,13 @@
+Wideband RC Divider - Test C1 -10% (0.7392pF)
+Vin in 0 PULSE(0 1 1u 1n 1n 50u 100u)
+R1 in out 150000
+C1 in out 7.391700000000001e-13
+R2 out 0 56000
+C2 out 0 2.2e-12
+.tran 100n 80u
+.control
+run
+wrdata output_2.dat v(out) v(in)
+quit
+.endc
+.end
